@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
-"""Show a text-mode spectrogram using live microphone data."""
 import argparse
-import math
-import numpy as np
-import shutil
-
 from sound_processor import *
 
 usage_line = 'Press \'Q\' or \'q\' to quit\n' + \
@@ -21,12 +16,7 @@ def int_or_str(text):
         return int(text)
     except ValueError:
         return text
-
-try:
-    columns, _ = shutil.get_terminal_size()
-except AttributeError:
-    columns = 80
-
+      
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('-l', '--list-devices', action='store_true',
                     help='list audio devices and exit')
@@ -51,9 +41,9 @@ if high <= low:
 try:   
     import sounddevice as sd
     if args.list_devices:
-        
         print(sd.query_devices())
         parser.exit(0)
+        
     print(usage_line)
     sound_processor = SoundProcessor(args)
     sound_processor.start_processing()
