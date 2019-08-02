@@ -7,12 +7,13 @@ import shutil
 
 from sound_processor import *
 
-usage_line = 'Press \'Q\' or \'q\' to quit\n' + \
-             'To change cutoff frequency: \'f<cutoff in Hz>\', eg: f5000\n' + \
-             'To change delay: \'d<delay in sec>\', eg: d0.2\n' + \
-             'Defaults: cutoff = 22050Hz\tdelay = 0.2sec\n' + \
-             'Have fun!!\n'
-
+usage_line = \
+'''Press \'Q\' or \'q\' to quit
+To change cutoff frequency: \'f<cutoff in Hz>\', eg: f5000
+To change delay: \'d<delay in sec>\', eg: d0.2
+For pitch-shift: \'s<scale of pitch>\', eg: s0.8 or s1.5
+Defaults: cutoff = 22050Hz\tdelay = 0.2sec
+Have fun!!'''
 
 
 def int_or_str(text):
