@@ -1,7 +1,7 @@
 # SoundProcessor
 
 ## Description
-A naive real-time digital sound processor, which can do the follows on mic input:
+A basic real-time digital sound processor, which can do the follows on mic input:
 1. Add an echo/delay effect
 2. Can Low Pass Filter
 3. Can modify pitch of sound
