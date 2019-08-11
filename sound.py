@@ -24,8 +24,6 @@ parser.add_argument('-l', '--list-devices', action='store_true',
 parser.add_argument('-b', '--block-duration', type=float,
                     metavar='DURATION', default=50,
                     help='block size (default %(default)s milliseconds)')
-parser.add_argument('-c', '--columns', type=int, default=columns,
-                    help='width of spectrogram')
 parser.add_argument('-d', '--device', type=int_or_str,
                     help='input device (numeric ID or substring)')
 parser.add_argument('-g', '--gain', type=float, default=10,
