@@ -17,8 +17,9 @@ Record your voice and have fun.
 ## How to use:
 1. Install `numpy` and `sounddevice`
 2. Download this repository and change directory to the repository's directory.
-3.1.`python3 sound.py` for real-time sound processing
-3.2.`python3 auto_tune_Test.py` for Auto-Tune functionality.
+3.
+  1. `python3 sound.py` for real-time sound processing
+  2.`python3 auto_tune_Test.py` for Auto-Tune functionality.
 4. Make sure to provide Microphone and Speaker access to the program.
 
 Note: Please use headphones so that the mic does not catch the output of the program. Else it can lead to positive feedback shrieks.
